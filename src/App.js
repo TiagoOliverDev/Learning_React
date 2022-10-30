@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import FirstComponent from './components/FirstComponent'; //Importando o componente
+import AnotherComponent from './components/AnotherComponent';
+import Images from './components/Images';
+import Hooks from './components/Hooks';
+import List from './components/List';
+import RenderCond from './components/RenderCond';
+import Fragment from './components/Fragment';
+import Container from './components/Container';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Hello React</h2>
+      <FirstComponent /> {/* Chamando o componente */}
+      <AnotherComponent/>
+      <Images/>
+      <Hooks/>
+      <List/>
+      <RenderCond x={10} y={7}/>
+      <Fragment/>
+      <Container>
+        <h1>Componente filho do container</h1>
+      </Container>
     </div>
   );
 }

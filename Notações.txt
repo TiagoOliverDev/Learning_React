@@ -1,0 +1,116 @@
+Curso de React: https://www.youtube.com/watch?v=FXqX7oof0I4&list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO
+
+Notações abaixo:
+
+Iniciando um projeto
+- Criando um projeto
+- Padrão
+- Componentes
+- Propriedades
+- Estado
+- Estilização
+- Roteamento
+
+
+01 - Criando um projeto:
+- Temos diversas formas de iniciar um projeto React, cada um com suas peculiaridades. Nesse exemplo vamos utilizar o mais utilizado!
+npx create-react-app nome-do-projeto     
+- Lembrar de escolher o yarn ao invés do npm!
+cd nome-do-projeto     
+code  .
+
+02 - Padrão:
+- Excluir a pasta node modules e dá um yarn install para ele aderir ao yarn
+- Dentro da pasta SRC é onde ficará todos os nossos códigos e componentes
+- Em relação aos componentes é necessário criar uma pasta dentro do SRC chamada   components e dentro dela será onde iremos criar nossos componentes através de alguma lib de componentes como o MUI.js por exemplo.
+- Devemos escolher entre npm ou yarn, preferencialmente escolher yarn
+- A pasta node modules pode ser excluída e reinstalada com npm install ou yarn install
+- Em src/index.js temos o padrão de sintaxe do React 
+- Em App.js temos o primeiro componente criado por padrão do React (Só para se basear mesmo.)
+	- Em App.css temos a estilização do App.js
+     	- Em index.css temos o arquivo onde podemos estilizar todo o projeto de forma global
+	- Em package.json temos as configurações do projeto (dependências, versões etc..)
+- Após isso para rodar damos um yarn start
+
+03 – Componentes:
+No React temos um padrão de desenvolvimento baseado em componentes, onde podemos escolher uma lib com componentes prontos criar na pasta components e ir importante nos arquivos onde eles serão utilizados.
+Padrão dos componentes React:  Vamos dá um exemplo básico!
+- O arquivo App.js dentro de src é um componente que está sendo importado e utilizado dentro do arquivo index.js e dentro do arquivo index.js temos uma const root que através do reactdom ele renderiza esse componente dentro do root (public/index.html)
+-  Aqui em componentes basicamente iremos pegar componentes (sidebar, tooltip, modal, card e etc...) prontos do MUI.js e adaptar ao projeto , lembrando que é necessário criar todo e qualquer componentes dentro da de src/components 
+- Após componente criado devidamente vamos no arquivo onde queremos utiliza-lo e importamos depois o chamamos no return.
+- Link do Mui: Instalação - Material UI (mui.com)
+- Como utilizar o MUI ? Nele basicamente instalamos via yarn ou npm e em um arquivo js ou tsx importamos somente o componente que queremos utilizar e chamamos ele em uma function mais abaixo (lembrando que todo arquivo de componente deve ter somente um componente!). 
+
+
+
+Notações do curso do link acima:
+
+
+Criamos o projeto com o npx create-react-app nomeProjeto
+
+criamos alguns componentes dentro da pasta src/components e 
+importamos eles no App.js, lembrando que o App.js é importado dentro 
+do index.js e esse index.js renderiza ele dentro do public/index.html
+lembrando também que o index.css é a estilização global do projeto.
+
+Criamos uma pasta assets/img e jogamos uma imagem lá dentro, jogamos também
+uma imagem dentro de public e essa public podemos importar em qualquer componente
+do projeto apenas dando /nomeDaFoto.jpg, já a dentro de assets/img temos que botar
+o path das pastas  importando ela e dai criamos um component Images.js
+criamos uma function e chamamos a imagem lá dentro e pronto, temos o component de imagem
+feito isso é só importar esse componente de imagem em qualquer outro componente que for necessário
+
+
+Hooks do React:
+
+Hooks servem para gerenciar estados, useState por exemplo, é como get e set
+ex: const [novaIdade, setNovaIdade] = useState(22)
+
+temos também o useEffect que recebe uma function anônima
+
+useEffect(() => {
+	console.log("Testando")
+})
+
+Sempre que mudar o state do componente o useEffect é chamado! Ele tbm é muito utilizado para consumir API
+
+Dica: Depois estudar algo somente de Hooks, pois o conteúdo é grande e complexo.
+
+
+Listas: Minuto 42 https://www.youtube.com/watch?v=pOVyVivyfok&list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&index=41
+
+
+Criamos um component List e nele criamos uma list, com isso no nosso return percorremos essa lista usando map
+e marcamos os campos que queremos exibir
+
+
+Criamos um component RenderCond onde nele abrimos {} e fizemos verificações de parâmetros
+passados em seu chamamento lá no App.js
+
+Criamos um component Fragment que é uma forma de termos como renderizar na tela vários elementos
+sem ter um elemento Pai, para isso abrimos uma tag anônima e dentro dela criamos os componentes que serão
+renderizados por ordem.
+
+Criamos um component container que a ideia aqui é que ele apenas abrace outros componentes
+no caso utilizamos esse componente como se fosse uma tag html e dentro dele criamos outro componente
+lembrando que precisamos de um parâmetro children no component container
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
