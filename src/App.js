@@ -8,6 +8,8 @@ import RenderCond from './components/RenderCond';
 import Fragment from './components/Fragment';
 import Container from './components/Container';
 import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
    
 function App() {
   return (
@@ -24,6 +26,10 @@ function App() {
         <h1>Componente filho do container</h1>
       </Container>
       <List/>
+      <h2>Testes de eventos React</h2>
+      <Evento numero={1} />
+      <Evento numero={2} />
+      <Form/>
     </div>
   );
 }
