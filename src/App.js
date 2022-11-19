@@ -1,13 +1,14 @@
 import './App.css';
-import FirstComponent from './components/FirstComponent'; //Importando o componente
+import FirstComponent from './components/FirstComponent';     //Importando o componente
 import AnotherComponent from './components/AnotherComponent';
 import Images from './components/Images';
 import Hooks from './components/Hooks';
-import List from './components/List';
+import Lista from './components/Lista';
 import RenderCond from './components/RenderCond';
 import Fragment from './components/Fragment';
 import Container from './components/Container';
-
+import List from './components/List';
+   
 function App() {
   return (
     <div className="App">
@@ -16,12 +17,13 @@ function App() {
       <AnotherComponent/>
       <Images/>
       <Hooks/>
-      <List/>
+      <Lista/>
       <RenderCond x={10} y={7}/>
       <Fragment/>
       <Container>
         <h1>Componente filho do container</h1>
       </Container>
+      <List/>
     </div>
   );
 }
