@@ -10,6 +10,7 @@ import Container from './components/Container';
 import List from './components/List';
 import Evento from './components/Evento';
 import Form from './components/Form';
+import Change from './components/Change';
    
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Evento numero={1} />
       <Evento numero={2} />
       <Form/>
+      <Change/>
     </div>
   );
 }
