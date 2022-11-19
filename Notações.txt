@@ -42,7 +42,6 @@ Padrão dos componentes React:  Vamos dá um exemplo básico!
 - Como utilizar o MUI ? Nele basicamente instalamos via yarn ou npm e em um arquivo js ou tsx importamos somente o componente que queremos utilizar e chamamos ele em uma function mais abaixo (lembrando que todo arquivo de componente deve ter somente um componente!). 
 
 
-
 Notações do curso do link acima:
 
 
@@ -95,6 +94,27 @@ Criamos um component container que a ideia aqui é que ele apenas abrace outros 
 no caso utilizamos esse componente como se fosse uma tag html e dentro dele criamos outro componente
 lembrando que precisamos de um parâmetro children no component container
 
+Avançando em props: Podemos definir tipos para as props, realizando uma espécie de validação;
+Definimos em um objeto chamado propTypes no próprio componente;
+E ainda há a possibilidade de definir um valor padrão;
+Neste caso utilizamos o objeto defaultProps
+Neste conteúdo criamos os arquivos List e Item onde no Item usamos o PropTypes para definir sua tipagem e valor padrão e no List
+importamos o componente Item e passamos alguns parâmetros na props
+
+Eventos no React (onClick, onChange, onSubmit)
+- Os eventos em React são os mesmos eventos do DOM, ou seja, temos eventos para responder a um click;
+- O evento é atrelado a uma tag que irá executá-lo, geralmente um método é atribuído ao evento, este 
+método deve ser criado no componente
+
+- Aqui foi criado o componente Evento onde criamos um componente para testar o onClick (evento ao clicar), depois foi criado o componente Form
+Onde foi criado para testar o onSubmit (esse serve para enviar dados do form) e por fim criamos o componente Change onde testamos o evento onChange (esse basicamente captura mudança no input)
+
+Estudar: 
+
+. Utilização de todos os hooks do React
+. Gerenciamento de páginas com React Router
+. Gerenciamento de contexto com Context API
+. Criar projetos com React e Redux
 
 
 
