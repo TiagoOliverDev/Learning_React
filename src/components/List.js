@@ -1,29 +1,17 @@
+import Item from "./Item";
 
-const List = () => {
-
-    const items = [
-        {
-            id:1,
-            name: "Tiago",
-        },
-        {
-            id:2,
-            name: "Paulo",
-        },
-        {
-            id:3,
-            name: "Fabyola",
-        },
-    ]
+const List  = () => {
 
     return(
-        <div>
-            {items.map((item) => (
-                <p>
-                    {item.id} - {item.name}
-                </p>
-            ))}
-        </div>
+        <>
+            <h1>Minha Lista</h1>
+            <ul>
+                <Item marca="Ferrari" ano_lançamento={1985} />
+                <Item marca="Fiat" ano_lançamento={2000} />
+                <Item marca="Renault" ano_lançamento={2011} />
+                <Item />
+            </ul>
+        </>
     )
 }
 
